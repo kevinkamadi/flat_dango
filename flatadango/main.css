@@ -1,0 +1,97 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font for the body */
+body {
+    background-color: #b2cd69;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header with a background color, text color, and center-align text */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Center the main content and provide some spacing */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Style the movie section */
+.movie-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #734242;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.movie-details .poster img {
+    max-width: 900px;
+    height: 750px;
+}
+.movie-details .info .movie-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.movie-details .info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Style the "Buy Ticket" button */
+.buy-ticket {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-ticket:disabled {
+    background-color: #6f3030;
+    cursor: not-allowed;
+}
+
+/* Style the movie menu section */
+.movie-menu {
+    flex: 1;
+}
+
+/* Style the movie menu title */
+.movie-menu h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+/* Style the movie list */
+ul#films {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style individual movies in the menu */
+.film.item {
+    font-size: 18px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.film.item:hover {
+    color: #007bff;
+}
